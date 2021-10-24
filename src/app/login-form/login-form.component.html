@@ -1,0 +1,26 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<div class="container mt-5">
+    <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+            <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" action="" method="post" #f="ngForm">
+                    <h3 class="text-center text-info" aria-label="Aba de Login">Login</h3>
+                    <div class="form-group">
+                        <label for="username" class="text-info font-weight-bold" aria-label="Email">Email:</label><br>
+                        <input type="text" name="email" id="username" aria-label="Digite Seu Email"
+                        class="form-control" placeholder="exemple@email.com" [(ngModel)]="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-info font-weight-bold" aria-label="Senha">Senha:</label><br>
+                        <input type="password" name="senha" id="password"
+                        aria-label="Digite sua senha" class="form-control" [(ngModel)]="senha">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-info btn-md" 
+                        aria-label="Fazer Login" (click)="submit()" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

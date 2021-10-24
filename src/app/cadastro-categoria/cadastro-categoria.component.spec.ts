@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataFormComponent } from './data-form.component';
+import { CadastroCategoriaComponent } from './cadastro-categoria.component';
 
-describe('DataFormComponent', () => {
-  let component: DataFormComponent;
-  let fixture: ComponentFixture<DataFormComponent>;
+describe('CadastroCategoriaComponent', () => {
+  let component: CadastroCategoriaComponent;
+  let fixture: ComponentFixture<CadastroCategoriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataFormComponent ]
+      declarations: [ CadastroCategoriaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataFormComponent);
+    fixture = TestBed.createComponent(CadastroCategoriaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <h1 aria-label="Cadastro de Filmes">Cadastro de Filmes</h1>
+    <form class="row g-3" [formGroup]="formFilme">
+        <div class="form-group col-md-6">
+            <label for="inputNome" class="form-label" aria-label="Título do Filme">Título:</label>
+            <input type="text" class="form-control" id="inputNome"
+            aria-label="Inserir Título do Filme" formControlName="filme">
+        </div>
+        <div class="col-md-6">
+            <label for="inputDir" class="form-label" aria-label="Diretor do Filme">Diretor:</label>
+            <input type="text" class="form-control" id="inputDir"
+            aria-label="Inserir Diretor do Filme" formControlName="diretor">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputData" class="form-label" aria-label="Data de Lançamento do Filme">Data de Lançamento:</label>
+            <input type="date" class="form-control" id="inputData" 
+            aria-label="Inserir Data de Lançamento do Filme" formControlName="ano">
+        </div>
+        <div class="col-md-6">
+            <label for="inputDuracao" class="form-label" aria-label="Duração do Filme">Duração:</label>
+            <input type="time" class="form-control" id="inputDuracao" 
+            aria-label="Inserir Tempo de Duração do Filme" formControlName="duracao">
+        </div>
+        <div class="col-12">
+            <label for="inputSinopse" class="form-label" aria-label="Sinopse do Filme">Sinopse:</label>
+            <input type="text" class="form-control" id="inputSinopse"
+            aria-label="Inserir Sinopse para o Filme" formControlName="sinopse">
+        </div>
+        <div class="col-md-6">
+            <label for="inputURL" class="form-label" aria-label="URL da Imagem do Filme">URL da Imagem:</label>
+            <input type="text" class="form-control" id="inputURL" 
+            formControlName="imagem" aria-label="Inserir URL da Imagem do Filme">
+        </div>
+        <div class="col-md-4">
+            <label for="inputCategoria" class="form-label" aria-label="Selecionar Categoria do Filme">Categoria:</label>
+            <select id="inputCategoria" class="form-select" formControlName="categoria">
+            <option selected disabled aria-label="Categorias">Categorias...</option>
+            <option *ngFor="let cats of categorias" value="{{cats.id}}" [attr.aria-label]="cats.categoria">{{cats.categoria}}</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" (click)="submit()" aria-label="Cadastrar Filme">Cadastrar</button>
+        </div>
+    </form>
+</div>

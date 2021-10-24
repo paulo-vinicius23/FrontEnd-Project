@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="mt-2 row mb-2 form-group">
+        <h1 aria-label="Aba de Cadastro de Categorias">Cadastro de Categorias</h1>
+        <label for="categoria" class="col-sm-2 col-form-label" aria-label="Categoria">Categoria:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.categoria" aria-label="Digite uma Categoria">
+        </div>
+    </div>
+    <div class="row mb-2 form-group">
+        <label for="tag" class="col-sm-2 col-form-label" aria-label="Tag">Tag:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="tag" 
+            [(ngModel)]="categoria.tag" aria-label="Digite uma tag Para a Categoria">
+        </div>
+    </div>
+    <div class="form-group mt-2">
+        <button class="btn btn-primary btn-md" (click)="submit()" aria-label="Cadastrar Categoria">Cadastrar</button>
+    </div>
+</div>

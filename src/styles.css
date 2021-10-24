@@ -1,2 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap.css'
+.contrast,
+.contrast nav,
+.contrast div {
+    background: black !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.contrast div,
+.contrast nav {
+    border-bottom: 1px solid white;
+}
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast p,
+.contrast span {
+    color: white !important;
+}
+
+.contrast option,
+.contrast ul {
+    background: black !important;
+    color: yellow !important;
+}
+
+.contrast a,
+.contrast button {
+    background: black !important;
+    color: yellow !important;
+    border: 1px solid yellow !important;
+}
+
+.contrast select,
+.contrast input {
+    background: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}

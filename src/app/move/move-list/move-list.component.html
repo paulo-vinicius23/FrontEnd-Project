@@ -1,0 +1,9 @@
+<div class="container mt-3">
+    <div class="d-flex flex-wrap col-12">
+        <div *ngFor="let move of moveList">
+            <div class="mt-2">
+                <app-move-card tabindex="0" [filme]="move"></app-move-card>
+            </div>
+        </div>
+    </div>
+</div>
